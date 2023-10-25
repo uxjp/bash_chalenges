@@ -1,6 +1,9 @@
 #!bin/bash
 
 function stopwatcher() {
+  # Next challenge
+  # Can't use date
+  #
   INIT_TIME=$(date +'%Y-%m-%d %H:%M:%S.%N')
   $1
   POST_TIME=$(date +'%Y-%m-%d %H:%M:%S.%N')
@@ -14,9 +17,9 @@ function stopwatcher() {
 }
 
 function sleep5() {
-  echo "começando a dormir por 5 segundos..."
+  echo "starting to sleepfor 5 secounds..."
   sleep 5
-  echo "acordei"
+  echo "I woke up"
 }
 
 stopwatcher sleep5
